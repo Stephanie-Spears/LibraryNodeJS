@@ -1,0 +1,21 @@
+{
+  "name": "librarynodejs",
+  "version": "1.0.0",
+  "description": "Library Application written in C++ and passed to NodeJS for a web front-end implementation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephanie-Spears/LibraryNodeJS.git"
+  },
+  "author": "Stephanie Spears",
+  "license": "ISC",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Stephanie-Spears/LibraryNodeJS/issues"
+  },
+  "homepage": "https://github.com/Stephanie-Spears/LibraryNodeJS#readme"
+}

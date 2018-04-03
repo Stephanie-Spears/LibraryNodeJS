@@ -3,4 +3,4 @@ project(LibraryNodeJS)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(LibraryNodeJS main.cpp)
+add_executable(LibraryNodeJS main.cpp Song.cpp Song.h)
