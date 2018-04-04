@@ -65,14 +65,14 @@ in: prompt
 out: inputStr
 return: none
 */
-void readString(const char prompt[], char inputStr[]) {
+void readString(const char prompt[], char inputStr[], int MAX_CHAR) {
 	cout << endl << prompt;
-	cin.get(inputStr, 50, '\n');
+	cin.get(inputStr, MAX_CHAR, '\n');
 	while (!cin) {
 		cin.clear();
 		cin.ignore(100, '\n');
 		cout << endl << prompt;
-		cin.get(inputStr, 50, '\n');
+		cin.get(inputStr, MAX_CHAR, '\n');
 	}
 	if (islower(inputStr[0])) {
 		inputStr[0] = static_cast<char>(toupper(inputStr[0]));
