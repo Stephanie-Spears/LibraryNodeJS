@@ -5,6 +5,8 @@
 #ifndef LIBRARYNODEJS_SONG_H
 #define LIBRARYNODEJS_SONG_H
 
+const int MAX_CHAR = 50;
+
 
 class Song {
 public:
