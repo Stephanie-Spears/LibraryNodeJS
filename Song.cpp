@@ -41,17 +41,12 @@ Song::~Song() {
 
 
 void Song::getTitle(char title[]) const {
-//	if (islower(this->title[0])) {
-//		this->title[0] = static_cast<char>(toupper(this->title[0]));
-//	}
 	strcpy(title, this->title); //strcpy(destination, source), so it's taking the member variable "this->title" and copying it into the passed in parameter "title."
 	//since the parameter is passed by value, the new value of "title" is updated in main.
 }
 
 void Song::getArtist(char artist[]) const {
-//	if (islower(this->artist[0])) {
-//		this->artist[0] = static_cast<char>(toupper(this->artist[0]));
-//	}
+
 	strcpy(artist, this->artist);
 }
 
@@ -60,9 +55,6 @@ void Song::getDuration(char duration[]) const {
 }
 
 void Song::getAlbum(char album[]) const {
-//	if (islower(this->album[0])) {
-//		this->album[0] = static_cast<char>(toupper(this->album[0]));
-//	}
 	strcpy(album, this->album);
 }
 

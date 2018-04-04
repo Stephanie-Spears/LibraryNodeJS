@@ -31,20 +31,22 @@ public:
 
 
 private:
-	char *title;
+	char *title; //pointer var->var content=mem address
 	char *artist;
 	char *duration;
 	char *album;
-/*
- A *pointer variable: a variable whose content is a memory address
- "&" is the address operator, it returns the address of its operand
- (ex: int x; int *p; ...  p = &x;) <- this sets p = to the address of x. So now x and p both refer to the same memory location.
-*/
+
 
 };
 
 
 #endif //LIBRARYNODEJS_SONG_H
+
+/*
+ * "*" is a pointer variable, whose content is a memory address
+ "&" is the address operator, it returns the address of its operand
+ (ex: int x; int *p; ...  p = &x;) <- this sets p = to the address of x. So now x and p both refer to the same memory location.
+*/
 
 //Song aSong; //this is an object of type Song
 //Song *aSongPointer; //this is a pointer variable of type Song
