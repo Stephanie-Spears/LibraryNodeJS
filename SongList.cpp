@@ -14,14 +14,14 @@ using namespace std;
 SongList::SongList() {
 	first = nullptr;
 	last = nullptr;
-	count = 0; //no elements in list
+	count = 0;
 }
 
 SongList::SongList(const char fileName[]) {
 	first = nullptr;
 	last = nullptr;
 	count = 0;
-	loadSongs(fileName); //access member function w/ file path parameter
+	loadSongs(fileName);
 }
 
 SongList::~SongList() {
@@ -130,7 +130,7 @@ bool SongList::searchArtist(const char artist[], Song &match) const {
 	if (!current) {
 		return false;
 	}
-	else{
+	else {
 		return true;
 	}
 }
@@ -163,10 +163,9 @@ bool SongList::searchAlbum(const char album[], Song &match) const {
 		}
 	}
 	if (!current) {
-
 		return false;
 	}
-	else{
+	else {
 		return true;
 	}
 }
@@ -324,7 +323,7 @@ void SongList::removeSong(int index, Song& deleteSong, Song& aSong) {
 	found = false;
 
 
-	if (get(index, deleteSong, song) == true) {
+	if (get(index, deleteSong, song)) {
 		while (current != nullptr && !found){
 			if  (currentIndex == index)	{//if the currentIndex is delete
 				found = true;
@@ -352,8 +351,8 @@ void SongList::removeSong(int index, Song& deleteSong, Song& aSong) {
 				else { //if item to be deleted isn't in the first node
 					cout << "Item to be deleted isn't the first item in the list" << endl;
 					trailCurrent->next = current->next; //copies current's next into trailCurrent's next
-					//	if (current == last)
-					if (index == (count-1)) { //if the item we want to delete is in the last node ? why doesn't the book's example if(current==last) work?
+						if (current == last){
+//					if (index == (count-1)) { //if the item we want to delete is in the last node ? why doesn't the book's example if(current==last) work?
 						cout << "Item to be deleted is the last in the list." << endl;
 						last = trailCurrent; //set the last address to the "one before last" node?
 					}

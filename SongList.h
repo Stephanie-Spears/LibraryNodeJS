@@ -34,8 +34,9 @@ private:
 	struct Node {
 		Song data;
 		Node * next;
-		Node * back;
-		Node(const Song& aData) {
+//		Node * back;
+
+		explicit Node(const Song& aData) {
 			char title[MAX_CHAR];
 			char artist[MAX_CHAR];
 			char duration[MAX_CHAR];

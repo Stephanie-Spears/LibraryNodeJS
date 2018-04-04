@@ -15,8 +15,6 @@ using namespace std;
 
 //RENAME MAIN TO CALLABLE FUNCTION
 int main() {
-
-
 	char command;
 	char fileName[] = "/Users/wolfmac/CLionProjects/MusicLibrary/songs.txt";
 	SongList list(fileName);

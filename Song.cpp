@@ -64,33 +64,21 @@ void Song::getAlbum(char album[]) const {
  * In: user-defined value or inputfile.txt value, validated by InputTools
  * */
 void Song::setTitle(const char title[]) {
-	if (this->title != nullptr) {
-		delete[] this->title;
-	}
 	this->title = new char[strlen(title)+1];
 	strcpy(this->title, title);
 }
 
 void Song::setArtist(const char artist[]) {
-	if (this->artist != nullptr) {
-		delete[] this->artist;
-	}
 	this->artist = new char[strlen(artist)+1];
 	strcpy(this->artist, artist);
 }
 
 void Song::setDuration(const char duration[]) {
-	if (this->duration != nullptr) {
-		delete[] this->duration;
-	}
 	this->duration = new char[strlen(duration)+1];
 	strcpy(this->duration, duration);
 }
 
 void Song::setAlbum(const char album[]) {
-	if (this->album != nullptr) {
-		delete[] this->album;
-	}
 	this->album = new char[strlen(album)+1];
 	strcpy(this->album, album);
 }

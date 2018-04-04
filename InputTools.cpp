@@ -60,7 +60,7 @@ char readChar(char prompt[]) {
 }
 
 
-/* Reads a c-string from input of max 49 char, capitalizes first letter, clears buffer
+/* Reads a c-string from input of max-1 char, capitalizes first letter, clears buffer
 in: prompt
 out: inputStr
 return: none

@@ -57,13 +57,12 @@ void processCommand(char command, SongList& list) {
 				//	song.getAlbum(album);
 			}
 			else {
-				cout << endl << "Seach Complete." << endl << endl;
+				cout << endl << "Search Complete." << endl << endl;
 			}
 			break;
 
 		case '5': readSearchAlbum(album);
 			if (list.searchAlbum(album, song)) {
-				//	cout << "test" << endl;
 				//	song.getTitle(title);
 				//	song.getArtist(artist);
 				//	song.getDuration(duration);
@@ -71,7 +70,7 @@ void processCommand(char command, SongList& list) {
 
 			}
 			else {
-				cout << endl << "Seach Complete." << endl << endl;
+				cout << endl << "Search Complete." << endl << endl;
 			}
 			break;
 
